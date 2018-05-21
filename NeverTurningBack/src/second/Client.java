@@ -10,15 +10,10 @@ public class Client implements Runnable {
 	
 	private ObjectOutputStream out;
 	private ObjectInputStream in;
-	
 	private Socket connection;	
-	
 	private int port;
-	
 	private String message;
-	
 	private boolean running = false;
-	
 	private Thread run, receive;
 	
 	public Client(int port) throws IOException, ClassNotFoundException {
